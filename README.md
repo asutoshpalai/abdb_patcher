@@ -25,6 +25,6 @@ _Note:_ This is not a permanent patch. The changes get reverted on reboot.
 ## Status
 
 Although the patch is successful and the daemon restarts successfully, the `abd
-root` command still fails (adb restarts, but without root). But feel free to try
-for yourself. Nothing is permanent, everything reverts back with the reboot.
-
+root` failed for **me** as **my** ROM was not compiled with `ALLOW_ADBD_ROOT` flag. But
+feel free to try for yourself. Nothing is permanent, everything reverts back
+with the reboot. If it works, create an issue so that I can remove this message.
