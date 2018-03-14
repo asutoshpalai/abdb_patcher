@@ -1,7 +1,7 @@
 ## Why this strategy failed!
 
-- As can be checked in the source files, the (`should drop
-  privileges`)[https://android.googlesource.com/platform/system/core/+/android-cts-8.1_r3/adb/daemon/main.cpp#62]
+- As can be checked in the source files, the [`should drop
+  privileges`](https://android.googlesource.com/platform/system/core/+/android-cts-8.1_r3/adb/daemon/main.cpp#62)
   always returns `1` when the compiler flag `ALLOW_ADBD_ROOT` is not set. This 
   flag is only set for [`userdebug` and `eng`
   builds](https://android.googlesource.com/platform/system/core/+/android-cts-8.1_r3/adb/Android.mk#355).
@@ -46,8 +46,8 @@
   I don't think we can do much about it either, except for compiling our own
   version!
 
-- Since some of the selinux functions like `selinux_android_restorecon` were
-  present, I thought that we can recreate the function in the binary. But I was
+- As some of the selinux functions like `selinux_android_restorecon` were
+  present, I thought that we can recreate the `selinux_android_setcon` function in the binary. But I was
   not able to find the source code of `setcon`.
 
 Considering the above point, I came to the conclusion that this trick to gain
