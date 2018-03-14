@@ -4,6 +4,10 @@ property `ro.debuggable`.
 
 #### This works on rooted devices only
 
+### This doesn't work.
+
+For details, check the [Failure.md](Failure.md) writeup.
+
 ## Running
 
 - Install [radare2](https://github.com/radare/radare2) and
