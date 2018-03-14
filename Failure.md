@@ -21,7 +21,7 @@
     0x00404ec0      020540ad       ldp q2, q1, [x8]                                                                                                                                       
     0x00404ec4      e0c3863c       stur q0, [sp + local_6ch]                                                                                                                              
     0x00404ec8      e28702ad       stp q2, q1, [sp + local_50h]                                                                                                                           
-    0x00404ecc      c6780194       bl sym.minijail_set_supplementary_gids ;[5] NO CONDITIONAL JUMP BEFORE THIS                                                                                                        
+    0x00404ecc      c6780194       bl sym.minijail_set_supplementary_gids ;[5] NO CONDITIONAL JUMP AFTER THIS                                                                                                        
     0x00404ed0      e1071a32       orr w1, wzr, 0xc0                                                                                                                                      
     0x00404ed4      e00313aa       mov x0, x19                                                                                                                                            
     0x00404ed8      fd780194       bl sym.minijail_capbset_drop ;[6]                                                                                                                      
